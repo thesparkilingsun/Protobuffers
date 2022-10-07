@@ -1,4 +1,5 @@
 ﻿using DummyDB.Models;
+using ProtoBuffers.Payload;
 using ProtoBuffers.Repositories.IRepositories;
 
 namespace ProtoBuffers.Services

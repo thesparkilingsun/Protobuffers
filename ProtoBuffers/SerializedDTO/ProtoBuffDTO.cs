@@ -4,7 +4,7 @@ using DummyDB.Models;
 using ProtoBuf;
 using ProtoBuffers.DTO;
 
-namespace ProtoBuffers
+namespace ProtoBuffers.SerializedDTO
 {
     [ProtoContract]
     public class ProtoBuffDTO : ISerializableDTO

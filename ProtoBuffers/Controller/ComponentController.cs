@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProtoBuffers.Payload;
 using ProtoBuffers.Services;
+using Serilog.Core;
 
 namespace ProtoBuffers.Controller
 {
@@ -11,13 +12,14 @@ namespace ProtoBuffers.Controller
     {
         private readonly ComponentServices _services;
         private readonly GrpcService _grpcService;
+        private readonly ILogger<Component> _logger;
         
 
-        public ComponentController(ComponentServices services, GrpcService grpcService)
+        public ComponentController(ComponentServices services, GrpcService grpcService, ILogger<Component> logger):base()
         {
             _services = services ?? throw new ArgumentNullException(nameof(services));
             _grpcService = grpcService ?? throw new ArgumentNullException(nameof(grpcService));
-           
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         [HttpGet, Route("all")]
@@ -31,13 +33,16 @@ namespace ProtoBuffers.Controller
             }
 
             Component[] compnt;
+            _logger.LogInformation("Processed!!!");
             try
             {
                 compnt = await _services.GetAllTheComponent(cancellationToken);
+                
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                _logger.LogError("Message: ", ex);
+               // Console.WriteLine(ex.ToString());
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
 

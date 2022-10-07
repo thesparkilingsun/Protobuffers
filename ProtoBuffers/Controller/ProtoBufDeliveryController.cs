@@ -10,9 +10,11 @@ namespace ProtoBuffers.Controller
     public class ProtoBufDeliveryController : ControllerBase
     {
         private readonly DeliverProtoBuffService _deliver;
-        public ProtoBufDeliveryController(DeliverProtoBuffService deliver)
+        
+        public ProtoBufDeliveryController(DeliverProtoBuffService deliver, ILogger<Component> logger)
         {
             _deliver = deliver ?? throw new ArgumentNullException(nameof(deliver));
+            
         }
 
         [HttpGet,Route("/component")]
@@ -33,7 +35,7 @@ namespace ProtoBuffers.Controller
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Message {ex}");
+                Console.WriteLine("Message: {0}",ex);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
             return val;

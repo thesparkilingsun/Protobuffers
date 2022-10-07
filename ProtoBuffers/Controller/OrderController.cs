@@ -131,7 +131,6 @@ namespace ProtoBuffers.Controller
             {
                 return BadRequest(ModelState);
             }
-            
             try
             {
                 await _orderDataService.EditOrderDataAsy(ord, cancellationToken);
@@ -141,7 +140,6 @@ namespace ProtoBuffers.Controller
                 Console.WriteLine($"Exception ex", ex);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-
             return Ok("Successful entry"); 
         }
 

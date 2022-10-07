@@ -1,14 +1,14 @@
 ﻿using DummyDB.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace ProtoBuffers
+namespace ProtoBuffers.Payload
 {
     public class ShipLoad
     {
         public int Id { get; set; }
         // Shipto
         [Required]
-        public int ShipToId { get; set; } = default(int);
+        public int ShipToId { get; set; } = default;
 
         [Required]
         [StringLength(100)]
@@ -31,7 +31,7 @@ namespace ProtoBuffers
 
         //Carrier
         [Required]
-        public int CarrierId { get; set; } = default(int);
+        public int CarrierId { get; set; } = default;
 
         [Required]
         [StringLength(10)]

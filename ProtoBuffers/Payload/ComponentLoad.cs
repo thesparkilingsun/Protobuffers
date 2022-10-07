@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProtoBuffers
+namespace ProtoBuffers.Payload
 {
-    public class ComponentLoad 
+    public class ComponentLoad
 
     {
         [Required]

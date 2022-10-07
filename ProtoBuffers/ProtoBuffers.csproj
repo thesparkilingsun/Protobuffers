@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject></StartupObject>
+    <UserSecretsId>779255bd-221e-4ef3-a22e-987d772ee643</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,11 @@
     </PackageReference>
     <PackageReference Include="protobuf-net.AspNetCore" Version="3.1.17" />
     <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.0.152" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.2" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />

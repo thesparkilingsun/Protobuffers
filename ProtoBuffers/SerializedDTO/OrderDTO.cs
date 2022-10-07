@@ -2,7 +2,7 @@
 using ProtoBuf;
 using ProtoBuffers.DTO;
 
-namespace ProtoBuffers
+namespace ProtoBuffers.SerializedDTO
 {
     [ProtoContract]
     public class OrderDTO : ISerializableDTO
@@ -14,10 +14,10 @@ namespace ProtoBuffers
         [ProtoMember(3)]
         public DateTime Time { get; set; }
         [ProtoMember(4)]
-        public string OrderNumber { get; set; }
+        public string OrderNumber { get; set; } = default!;
         [ProtoMember(5)]
         public int ShipmentId { get; set; }
         [ProtoMember(6)]
-        public Shipment Shipment { get; set; }
+        public Shipment Shipment { get; set; } = default!;
     }
 }

@@ -66,3 +66,16 @@ C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\obj\Debug
 C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\obj\Debug\net6.0\ProtoBuffers.pdb
 C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\obj\Debug\net6.0\ProtoBuffers.genruntimeconfig.cache
 C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\obj\Debug\net6.0\ref\ProtoBuffers.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Enrichers.Environment.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Enrichers.Process.dll
+C:\Users\atiwari\LearningProjects\MvcTestApp\ProtoBuffers\ProtoBuffers\bin\Debug\net6.0\Serilog.Enrichers.Thread.dll

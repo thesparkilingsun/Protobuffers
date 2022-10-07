@@ -2,6 +2,7 @@
 using ProtoBuffers;
 using ProtoBuffers.DTO;
 using ProtoBuffers.Repositories;
+using ProtoBuffers.SerializedDTO;
 using System.ComponentModel;
 using System.Runtime.Serialization;
 

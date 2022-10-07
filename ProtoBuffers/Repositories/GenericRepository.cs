@@ -9,13 +9,14 @@ namespace ProtoBuffers.Repositories
     {
         protected DbContextClass _dbContextClass;
         protected DbSet<T> _dbSet;
+        
 
 
-
-        public GenericRepository(DbContextClass dbContextClass):base()
+        public GenericRepository(DbContextClass dbContextClass) : base()
         {
             _dbContextClass = dbContextClass ?? throw new ArgumentNullException(nameof(dbContextClass));
             _dbSet = _dbContextClass.Set<T>();
+           
         }
 
         // Get
